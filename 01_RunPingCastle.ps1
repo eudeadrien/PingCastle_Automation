@@ -422,10 +422,10 @@ if ($sentNotification) {
     $alternateView = [System.Net.Mail.AlternateView]::CreateAlternateViewFromString($htmlBody, $null, "text/html")
 
     # Paramètres SMTP
-    $smtpServer = "RELAI-SMTP-LAN.intra.cg27.fr"
-    $smtpPort = 25
-    $from = "pingcastle@eure.fr"
-    $to = "support-infra@eure.fr"
+    $smtpServer = "SERVER_SMTP"
+    $smtpPort = X
+    $from = "pingcastle@gmail.fr"
+    $to = "xxx@xxxx.fr"
     $subject = "Rapport journalier PingCastle - $pingCastleDate"
 
     try {
@@ -437,6 +437,7 @@ if ($sentNotification) {
 } else {
     Write-Log "Mail non envoyé, non nécessaire !" -Level "INFO"
 }
+
 
 # Déplacement des rapports
 try {
