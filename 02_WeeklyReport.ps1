@@ -256,7 +256,7 @@ $graphics.FillRectangle([System.Drawing.Brushes]::Red, 400, $height - 15, 10, 10
 $graphics.DrawString("Anomaly", $font, [System.Drawing.Brushes]::Black, 415, $height - 17)
 
 # Sauvegarde en PNG
-$outputPath = "C:\Script\AUTOMATISATION_PINGCASTLE\PingCastle\Logs\graph"+$currentWeekNumber+".png"
+$outputPath = "..path\PingCastle\Logs\graph"+$currentWeekNumber+".png"
 $bitmap.Save($outputPath, [System.Drawing.Imaging.ImageFormat]::Png)
 
 $graphics.Dispose()
@@ -297,7 +297,7 @@ $html = @"
 <br>
 <p style="font-size: 0.9em; color: #888">
 Ce message est généré automatiquement. Merci de ne pas y répondre. Pour toute question, contactez le 
-<a href="mailto:support-infra@eure.fr" style="color:#4FC3F7">Support Infra</a>.
+<a href="mailto:test@test.fr" style="color:#4FC3F7">Support Infra</a>.
 </p>
 </body>
 </html>
@@ -310,7 +310,7 @@ $mailMessage.AlternateViews.Add($alternateView)
 
 # Configuration SMTP
 try {
-    $smtpClient = New-Object System.Net.Mail.SmtpClient("smtp.intra.cg27.fr", 25)
+    $smtpClient = New-Object System.Net.Mail.SmtpClient("SMTP_SERVER", 25)
     $smtpClient.Send($mailMessage)
     Write-Log "Email hebdomadaire envoyé à $to" -Level "INFO"
 } catch {
