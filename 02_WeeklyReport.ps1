@@ -170,9 +170,6 @@ $titleFont = New-Object System.Drawing.Font(
 )
 
 
-# Dessine le titre
-#$graphics.DrawString("Évolution des scores PingCastle", $titleFont, [System.Drawing.Brushes]::Black, 10, 10)
-
 # Axes
 $leftMargin = 60
 $topMargin = 50
@@ -265,8 +262,8 @@ Write-Log "Graphique sauvegardé à l'emplacement : $outputPath" -Level INFO
 
 # Création du message
 $mailMessage = New-Object System.Net.Mail.MailMessage
-$mailMessage.From = "pingcastle@eure.fr"
-$mailMessage.To.Add("support-infra@eure.fr")
+$mailMessage.From = "pingcastle@gmail.fr"
+$mailMessage.To.Add("xxxx@xxxx.fr")
 $mailMessage.Subject = "📬 Rapport PingCastle - Semaine $currentWeekNumber"
 $mailMessage.IsBodyHtml = $true
 $mailMessage.BodyEncoding = [System.Text.Encoding]::UTF8
@@ -297,7 +294,7 @@ $html = @"
 <br>
 <p style="font-size: 0.9em; color: #888">
 Ce message est généré automatiquement. Merci de ne pas y répondre. Pour toute question, contactez le 
-<a href="mailto:test@test.fr" style="color:#4FC3F7">Support Infra</a>.
+<a href="mailto:test@test.fr" style="color:#4FC3F7">Équipe informatique</a>.
 </p>
 </body>
 </html>
