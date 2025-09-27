@@ -24,9 +24,9 @@ Il exécute régulièrement des analyses, génère des rapports, crée des graph
 ## 📦 Structure du projet
 /PingCastleAutomation
 │── /PingCastle # Binaire PingCastle + répertoires Reports & Logs
-│────/Logs # Journaux d’exécution
-│────/Reports # Rapports générés (HTML, XML)
-│── 01_RunPingCastle.ps1 # Script principal d’exécution de l'anlayse & reporting
+│ ├── /Logs # Journaux d’exécution
+│ └── /Reports # Rapports générés (HTML, XML)
+│── 01_RunPingCastle.ps1 # Script principal d’exécution de l'analyse & reporting
 │── 02_RunPingCastle.ps1 # Script de reporting hebdomadaire
 
 ## ⚙️ Utilisation
