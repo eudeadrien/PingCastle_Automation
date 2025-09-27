@@ -28,7 +28,7 @@ Il exécute régulièrement des analyses, génère des rapports, crée des graph
 │ ├── /Logs # Journaux d’exécution
 │ └── /Reports # Rapports générés (HTML, XML)
 │── 01_RunPingCastle.ps1 # Script principal d’exécution de l'analyse & reporting
-│── 02_RunPingCastle.ps1 # Script de reporting hebdomadaire
+│── 02_WeeklyReport.ps1 # Script de reporting hebdomadaire
 ```
 
 ## ⚙️ Utilisation
