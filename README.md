@@ -34,7 +34,7 @@ Il exécute régulièrement des analyses, génère des rapports, crée des graph
 ## ⚙️ Utilisation
 1. Cloner le repository  
 2. Configurer les paramètres SMTP et chemins dans les deux scripts .ps1
-3. Planifier le script via le Planificateur de tâches Windows  
+3. Planifier les scripts via le Planificateur de tâches Windows  
 4. Tout est prêt ! ✅
 
 ## 📸 Exemple de résultat
